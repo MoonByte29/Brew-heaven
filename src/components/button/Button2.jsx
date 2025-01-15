@@ -7,4 +7,4 @@ function Button2({children}) {
   )
 }
 
-export default Button2
+export default Button2;

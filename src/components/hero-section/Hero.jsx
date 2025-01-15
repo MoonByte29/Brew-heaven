@@ -12,7 +12,7 @@ const Hero = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const heroHeight = document.querySelector(".hero").offsetHeight;
-      const newScaleFactor = 1 - scrollPosition / (heroHeight * 2);
+      const newScaleFactor = Math.min(1, Math.max(0.7, 1 - scrollPosition / (heroHeight * 2)));
       setScaleFactor(newScaleFactor);
     };
 

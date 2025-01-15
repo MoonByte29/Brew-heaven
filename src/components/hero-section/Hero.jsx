@@ -46,7 +46,7 @@ const Hero = () => {
             textShadow: "2px 2px black",
           }}
         >
-          BREW HAVEN
+          BREW HEAVEN
         </h2>
 
         <p

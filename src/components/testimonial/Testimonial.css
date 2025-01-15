@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+
+.testimonial{
+  z-index: 5;
+  overflow: hidden;
+  height: 700px;
+  max-width: 100%;
+  background: var(--bg-color);
+  padding: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:80px;
+}
+
+
+.review {
+  /* margin-bottom: 50px; */
+  /* width: 96%; */
+  height: 300px;
+  /* width: 70%; */
+  display: flex;
+  gap: 50px;
+}
+
+.review-card {
+  width:350px;
+  height: 300px;
+  padding: 0 15px;
+  border: 1px transparent solid;
+  border-radius: 10px;
+  background: var(--brown);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+
+  p {
+    color: var(--para-color);
+    line-height: 24px;
+    /* word-spacing: 2px; */
+    letter-spacing: 1px;
+
+  }
+
+}
+
+.review-card::before {
+  height: 0;
+  content: " '' ";
+  position: relative;
+  font-family: "Passion One", sans-serif;
+  font-size: 100px;
+  right: -280px;
+  top: -50px;
+  color: var(--light-brown);
+}
+
+.client-img {
+  /* position: relative; */
+  /* bottom: -px; */
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 300px;
+  height: 100px;
+
+  /* border: 1px solid red; */
+  overflow: hidden;
+  p{
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+}
+
+.client-img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}

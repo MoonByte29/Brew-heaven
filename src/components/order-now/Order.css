@@ -1,0 +1,33 @@
+.order-container{
+  z-index: 9;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  /* background: #fff; */
+  background-color: #ffffff32;
+  backdrop-filter: blur(8px);
+}
+
+.order-block{
+  width: 80%;
+  height: 80%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+
+}
+
+td{
+  border: 1px solid red;
+}

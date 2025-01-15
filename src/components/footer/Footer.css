@@ -2,7 +2,7 @@
   z-index: 5;
   height: 400px;
   width: "100vw";
-  background: var(--bg-color);
+  background: var(--brown);
   padding: 20px;
   position: relative;
   display: flex;
@@ -52,7 +52,7 @@
   width: 300px;
   font-size: 15px;
   border: 1px solid grey;
-  padding: 0 2px;
+  padding: 0 3px;
 }
 
 .copyright{

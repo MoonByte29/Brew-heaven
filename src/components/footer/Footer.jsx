@@ -9,7 +9,7 @@ function Footer() {
       <div className="footer">
 
         <div className="contact">
-          <img src={logo} alt="" srcset="" />
+          <img src={logo} alt="" />
         </div>
 
         <div className="link">

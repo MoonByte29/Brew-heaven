@@ -1,47 +1,24 @@
-import './Navbar.css';
-import Button from '../button/Button'
-import logo from '../../assets/brown-logo.png'
-import Popup from "reactjs-popup";
-import "reactjs-popup/dist/index.css";
+import React from "react";
+import Button from "../button/Button"; // Assuming you have a Button component
+import logo from "../../assets/brown-logo.png";
+import "./Navbar.css";
 
-const Navbar = ()=>{
-
-  // function showOrder(){
-  //   alert("Order Placed Successfully");
-  //   const abt = document.getElementById('abt').style.display='none';
-  //   const mn = document.getElementById('menu').style.display='block';
-  //   const ct = document.getElementById('contact').style.display='block';
-  // }
-  
-
+const Navbar = ({ scrollToSection, refs, onOrderClick }) => {
   return (
-    <>
     <nav className="navbar">
       <div className="logo">
         <img src={logo} alt="logo" />
       </div>
       <ul>
-      
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <Popup trigger={ <Button><a href="#order">Order now</a></Button>} modal nested>
-          {(close) => (
-            <div className="modal">
-              <div className="content">Welcome to GFG!!!</div>
-              <div>
-                <button onClick={() => close()}>Close modal</button>
-              </div>
-            </div>
-          )}
-        </Popup>
-
+        <li onClick={() => scrollToSection(refs.heroRef)}>Home</li>
+        <li onClick={() => scrollToSection(refs.aboutRef)}>About</li>
+        <li onClick={() => scrollToSection(refs.menuRef)}>Menu</li>
+        <li onClick={() => scrollToSection(refs.contactRef)}>Contact</li>
+        {/* Trigger the Order modal */}
+        <Button onClick={onOrderClick}>Order Now</Button>
       </ul>
-
     </nav>
-    </>
-  )
-}
+  );
+};
 
 export default Navbar;

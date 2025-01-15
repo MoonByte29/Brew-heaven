@@ -17,7 +17,7 @@
 ## Tech Stack 🛠️  
 
 - **Frontend:** ReactJS (with functional components and hooks)  
-- **Styling:** CSS/SCSS for a clean, modern look  
+- **Styling:** CSS for a clean, modern look  
 - **Routing:** React Router for seamless navigation between pages  
 
 ---
